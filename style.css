@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* color scheme sourced from https://www.color-hex.com/color-palette/74932 Underwater Scene palette */
+:root {
+    --colora: #daf8e3;
+    --colorb: #97ebdb;
+    --colorc: #00c2c7;
+    --colord: #0086ad;
+    --colore: #005582;
+    --colorf: #ffffff;
+}
+
+body {
+    background-color: #97ebdb;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2% 4%;
+}
+
+.card {
+    flex: 1 0 0;
+    padding: 10px;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+  }
+  
+  .card header {
+    padding: 20px;
+    background-color: #00c2c7;
+    color: #fff;
+  }
+  
+  .card img {
+    width: 100%;
+    min-width: 400px;
+  }
+
+
+
+
+
+
+
+
+.header {
+    padding: 45px;
+    font-family: 'Bellota Text', Arial, sans-serif;
+    background-color: #0086ad;
+    color: #ffffff;
+}
+
+.header h1 {
+    display: inline-block;
+    font-size: 48px;
+}
+
+.header nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Bellota Text', Arial, sans-serif;
+    font-size: 20px;
+}
+
+.header nav ul {
+    list-style-type: none;
+}
+
+.header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+.hero {
+    height: 850px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("https://image.freepik.com/free-vector/female-office-worker-with-laptop-headphones_61747-107.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+h2,
+h3,
+h4 {
+  margin-bottom: 0.625rem;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+h2 {
+  font-size: 30px;
+  color: #005582;
+}
+
+h3 {
+  font-size: 20px;
+  color: #005582;
+}
+
+h4 {
+  font-size: 15px;
+  color: #ffffff;
+  font-style: italic;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 1%;
+    background-color: #0086ad;
+  }
+
+
+@media screen and (max-width: 768px) {
+    header, main {
+      flex-direction: column;
+    }
+  
+    section {
+      padding-right: 0;
+    }
+  
+    aside {
+      width: 100%;
+      text-align: center;
+    }
+}
