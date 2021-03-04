@@ -1,8 +1,7 @@
 * {
     box-sizing: border-box;
-    padding: 0;
     margin: 0;
-    font-family: "Bellota Text", "Gadugi", Arial, sans-serif;
+    font-family: "Bellota Text", "Verdana", Arial, sans-serif;
 }
 
 /* Color scheme sourced from https://www.color-hex.com/color-palette/74932 Underwater Scene palette */
@@ -28,6 +27,8 @@ main {
     padding: 45px;
     background-color: var(--colord);
     color: var(--colora);
+    position: fixed;
+    width: 100%;
 }
 
 .header h1 {
@@ -57,7 +58,8 @@ ul a:hover { background-color: var(--colorb); }
 .hero {
     height: 850px;
     width: 100%;
-    margin-bottom: 25px;
+    margin-top: 155px;
+    margin-bottom: -16px;
     background-image: url("https://image.freepik.com/free-vector/female-office-worker-with-laptop-headphones_61747-107.jpg");
     background-size: cover;
     background-position: center;
@@ -71,16 +73,6 @@ h4 {
   font-weight: 700;
   line-height: 1.1;
 }
-
-/* Do I need to define these classes to make the nav work???
-
-.about-me,
-.my-work,
-.contact-me {
-  
-}
-
-*/
 
 h2 {
   font-size: 30px;
@@ -114,6 +106,7 @@ p {
   margin-left: 10px;
 }
 
+/* Size the cards & images evenly */
 .card {
   flex: 1 1 400px;
   padding: 10px;
@@ -123,7 +116,8 @@ p {
   border-color: var(--colore);
   border-radius: 4%;
   float: left;
-  width: 25%; 
+  width: 25%;
+  height: 400px;
 }
 
 .card header {
@@ -137,6 +131,8 @@ p {
 .card img {
   flex: 1 1 400px;
   padding: 10px;
+  width: 100%;
+  height: auto;
 }
 
 .card p {
@@ -153,18 +149,18 @@ footer {
   }
 
 
-  /* This is not working . . . */
-/* Cards are split into two columns at 992px or smaller */
-@media screen and (max-width: 992px) {
-  .card .card header .card img {
+/* Cards are split into two columns at 1080px or smaller */
+@media screen and (max-width: 1080px) {
+  .card {
     width: 50%;
+    height: 500px;    
   }
 }
 
-/* Cards are stacked on top of each other at 768px or smaller */
-@media screen and (max-width: 768px) {
-  .card .card header .card img {
+/* Cards are stacked on top of each other at 600px or smaller */
+@media screen and (max-width: 600px) {
+  .card {
     width: 100%;
-    flex-direction: column;
+    height: 400px;    
   }
 }

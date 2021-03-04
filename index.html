@@ -9,10 +9,10 @@
   <link rel="stylesheet" href="./style.css"/>
 </head>
 
+<!-- Fix About Me nav link -->
 <body>
   <header class="header">
     <h1>Rachel Brain</h1>
-    <!-- Make the nav links work -->
     <nav>
       <ul>
         <li><a href="#about-me">About Me</a></li>
@@ -27,7 +27,7 @@
 
   <main>
     <section>
-      <article class="about-me">
+      <article id="about-me">
         <h2>About Me</h2>
         <div>
           <h3>Capability statement & future direction</h3>
@@ -56,36 +56,37 @@
       </article>
       <br>
 
-      <article class="my-work">
-        <!-- Add images & links to additional information for each -->
+      <article id="my-work">
+        <!-- Add links to additional information & examples of my work (over coming weeks) -->
         <h2>My Work</h2>
         <div>
           <section class="card">
             <header>Web Development</header>
             <img src="./rachel-brain.github.io-Exercise-22.JPG" 
-            alt="screenshot of one of Rachel's websites" width="300" height="200"/>
-            <p>3 weeks experience in coding!</p>
+            alt="screenshot of one of Rachel's websites" 
+            onclick="document.location='./rachel-brain.github.io-prework-about-me.JPG'" target="_blank"/>
+            <p>Click on my pink & yellow webpage to see what I have achieved in 3 weeks of coding experience!  More work will be posted soon.</p>
           </section>
 
           <section class="card">
             <header>Marketing</header>
             <img src="https://tr1.cbsistatic.com/hub/i/r/2017/01/10/732612ed-3faf-401b-b31f-23226bd77a94/resize/770x/24836ea27ce6e4de668c8d4f2c28c115/istock-502399582.jpg" 
-            alt="photo of a corporate marketing meeting with 6 people" width="300" height="200"/>
+            alt="photo of a corporate marketing meeting with 6 people"/>
             <p>Masters of Marketing qualification & extensive experience working with Marketing departments</p>
           </section>
 
           <section class="card">
             <header>Account Management</header>
             <img src="https://insidefmcg.com.au/wp-content/uploads/2021/03/David_jones-Food-Review.png" 
-            alt="photo of a supermarket layout in-store" width="300" height="200"/>
-            <p>15 years experience in Account Management & Business Development major FMCG companies working with major & independent supermarket chains</p>
+            alt="photo of a supermarket layout in-store"/>
+            <p>15 years experience in Account Management & Business Development for FMCG companies working with major & independent supermarket chains</p>
           </section>
 
           <section class="card">
             <header>New Product Development</header>
             <img src="https://images.unsplash.com/photo-1583912267670-6575ad472688?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTl8fHJlc2VhcmNoJTIwbGFib3JhdG9yeXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" 
-            alt="photo of a food development laboratory" width="300" height="200"/>
-            <p>10 years experience in New Product Development for major FMCG companies focussing on "better for you" everyday products</p>
+            alt="photo of a food development laboratory"/>
+            <p>10 years experience in New Product Development for major FMCG companies focussing on "good" & "better for you" food products</p>
           </section>  
           
         </div>        
@@ -94,7 +95,7 @@
       <br>
       <br>
 
-      <article class="contact-me">
+      <article id="contact-me">
         <h2>Contact Me</h2>
         <div>
           <p>Please get in touch to chat to me about my work & how we can collaborate on your upcoming projects.</p>
